@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stockfish Chess Analyzer</title>
+
+<link rel="stylesheet"
+href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Stockfish 分析西洋棋</h1>
+
+<div id="mainContainer">
+
+<div id="board"></div>
+
+<div id="sidePanel">
+
+<h2>推薦走法</h2>
+
+<div id="movesList"></div>
+
+<div class="buttons">
+<button id="resetBtn">重新開始</button>
+<button id="flipBtn">翻轉棋盤</button>
+</div>
+
+</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+
+<script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/stockfish@16.1.0/src/stockfish.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
